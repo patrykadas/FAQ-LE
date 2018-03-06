@@ -37,7 +37,7 @@
 			</div>
 			<div class="toggle-inner">
 				<p>MetaMask is a bridge that allows you to visit the distributed web of tomorrow in your browser today. It allows you to run Ethereum dApps right in your browser without running a full Ethereum node.</p>
-				<iframe width="670" height="400" src="https://www.youtube.com/embed/tfETpi-9ORs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<iframe width="670" height="400" src="https://www.youtube.com/embed/tfETpi-9ORs?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
 			</div>
 		</div>
 			
@@ -141,14 +141,118 @@
 				<p>Of course, it would take you around two minutes. Go <a href="https://https://linkexchange.io/publisher.html">here.</a></p>
 			</div>
 		</div>
-
-
 	</div>
+
+
+	<div class="faq-section"> 
+		<h2>Payment model</h2>
+		<div class="toggle">
+			<div class="toggle-title">
+				<h3>
+					<i></i>
+					<span class="title-name">Why am I paying per probability?</span>
+				</h3>
+			</div>
+			<div class="toggle-inner">
+				<p>This is a probability of being displayed in publisher's widget. Link in slot competes with other links based on an algorithm score.</p>
+				<h3>Include slider here from landing page</h3>
+			</div>
+		</div>
+		
+		<div class="toggle">
+			<div class="toggle-title ">
+				<h3>
+				<i></i>
+				<span class="title-name">How's the score calculated?</span>
+				</h3>
+			</div>
+			<div class="toggle-inner">
+				<p>It depends on particular algorithm, as widget owner can even create custom one.</p>
+				<p>For example <a href="https://userfeeds-platform.readthedocs-hosted.com/en/latest/ref/algorithms.html#links">Links algorithm</a> sorts links according to this formula:</p>
+				<div class="formula">
+					<span class="code-line">period = 7 days</span>
+					<span class="code-line">score = Sum(</span>
+					<span class="code-line indent">if now - claim.create_at > period:</span>
+					<span class="code-line indent bigger">0</span>
+					<span class="code-line indent">else</span>
+					<span class="code-line indent bigger">claim.value / period * (now - claim.create_at)</span>
+					<span class="code-line">)</span>
+				</div>
+				<p>Depending on the expected traffic, widget’s expiration date and publisher’s reputation, sponsors can adjust probability score of their links by sending tokens to the widget.</p>
+			</div>
+		</div>
+			
+		<div class="toggle">
+			<div class="toggle-title  ">
+				<h3>
+					<i></i>
+					<span class="title-name">Can I rank it with my custom algorithm?</span>
+				</h3>
+			</div>
+				
+			<div class="toggle-inner">
+				<p>Of course! You can develop your own algorithm and use it however you want. </p>
+			</div>
+				
+		</div>
 </div>
  
+ 	<div class="faq-section"> 
+		<h2>Payment model</h2>
+		<div class="toggle">
+			<div class="toggle-title">
+				<h3>
+					<i></i>
+					<span class="title-name">Why am I paying per probability?</span>
+				</h3>
+			</div>
+			<div class="toggle-inner">
+				<p>This is a probability of being displayed in publisher's widget. Link in slot competes with other links based on an algorithm score.</p>
+				<h3>Include slider here from landing page</h3>
+			</div>
+		</div>
+		
+		<div class="toggle">
+			<div class="toggle-title ">
+				<h3>
+				<i></i>
+				<span class="title-name">How's the score calculated?</span>
+				</h3>
+			</div>
+			<div class="toggle-inner">
+				<p>It depends on particular algorithm, as widget owner can even create custom one.</p>
+				<p>For example <a href="https://userfeeds-platform.readthedocs-hosted.com/en/latest/ref/algorithms.html#links">Links algorithm</a> sorts links according to this formula:</p>
+				<div class="formula">
+					<span class="code-line">period = 7 days</span>
+					<span class="code-line">score = Sum(</span>
+					<span class="code-line indent">if now - claim.create_at > period:</span>
+					<span class="code-line indent bigger">0</span>
+					<span class="code-line indent">else</span>
+					<span class="code-line indent bigger">claim.value / period * (now - claim.create_at)</span>
+					<span class="code-line">)</span>
+				</div>
+				<p>Depending on the expected traffic, widget’s expiration date and publisher’s reputation, sponsors can adjust probability score of their links by sending tokens to the widget.</p>
+			</div>
+		</div>
+			
+		<div class="toggle">
+			<div class="toggle-title  ">
+				<h3>
+					<i></i>
+					<span class="title-name">Can I rank it with my custom algorithm?</span>
+				</h3>
+			</div>
+				
+			<div class="toggle-inner">
+				<p>Of course! You can develop your own algorithm and use it however you want. </p>
+			</div>
+				
+		</div>
+	</div>
+
+
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script  src="js/index.js"></script>
-
 </body>
 
 </html>
